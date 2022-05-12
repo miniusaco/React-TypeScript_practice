@@ -4,7 +4,7 @@ import "./styles.css";
 export default function App() {
   const onClickFetchData = () => {
     axios.get("https://jsonplaceholder.typicode.com/todos").then((res) => {
-      console.log();
+      console.log(res);
     });
   };
   return (
