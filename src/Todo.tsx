@@ -1,7 +1,7 @@
 type TodoType = {
   userId: number;
   title: string;
-  completed?: boolean;
+  completed?: boolean; //?を付ける事で必須でないことを明示できる
 };
 
 export const Todo = (props: TodoType) => {

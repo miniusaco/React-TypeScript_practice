@@ -7,7 +7,7 @@ type TodoType = {
   userId: number;
   id: number;
   title: string;
-  completed?: boolean;
+  completed: boolean;
 };
 
 export default function App() {
@@ -24,7 +24,11 @@ export default function App() {
     <div className="App">
       <button onClick={onClickFetchData}>データ取得</button>
       {todos.map((todo) => (
-        <Todo title={todo.title} userId={todo.userId} />
+        <Todo
+          title={todo.title}
+          userId={todo.userId}
+          completed={todo.completed}
+        />
       ))}
     </div>
   );
